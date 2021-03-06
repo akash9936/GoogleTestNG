@@ -16,7 +16,7 @@ public class TestListener implements ITestListener {
 	public void onFinish(ITestContext context) {
 		System.out.println(("*** Test Suite " + context.getName() + " ending ***"));
 		ExtentTestManager.endTest();
-		ExtentTestManager.getInstance().flush();
+	//	ExtentTestManager.getInstance().flush();
 	}
 
 	public void onTestStart(ITestResult result) {
